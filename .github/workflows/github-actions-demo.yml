@@ -31,6 +31,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: install dependency
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install --no-audit --no-fund --silent
+
       - name: Black Duck (Rapid scan)
         if: ${{ github.event_name == 'pull_request' }}
         uses: synopsys-sig/synopsys-action@v1.2.0
