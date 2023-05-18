@@ -1,8 +1,6 @@
 name: Synopsys Security Testing
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
   
@@ -35,7 +33,6 @@ jobs:
           blackduck_scan_full: false
           blackduck_automation_prcomment: true
           
-          include_diagnostics: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_apiToken: ${{ secrets.BLACKDUCK_API_TOKEN }}
