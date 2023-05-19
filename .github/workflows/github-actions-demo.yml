@@ -29,6 +29,7 @@ jobs:
         DETECT_EXCLUDED_DETECTOR_TYPES: GIT
       with:
         bridge_download_version: 0.1.272
+        include_diagnostics: true
         blackduck_url: ${{ secrets.BLACKDUCK_URL }}
         blackduck_apiToken: ${{ secrets.BLACKDUCK_API_TOKEN }}
         blackduck_scan_full: false
