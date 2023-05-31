@@ -27,7 +27,6 @@ jobs:
       uses: synopsys-sig/synopsys-action@v1.2.0
       env:
         DETECT_EXCLUDED_DETECTOR_TYPES: GIT
-        # DETECT_BLACKDUCK_RAPID_COMPARE_MODE: BOM_COMPARE_STRICT
       with:
         blackduck_url: ${{ secrets.BLACKDUCK_URL }}
         blackduck_apiToken: ${{ secrets.BLACKDUCK_API_TOKEN }}
