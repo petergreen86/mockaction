@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   
 env:
-  DETECT_PROJECT_NAME: ocean_action
+  DETECT_PROJECT_NAME: pgreen_ghaction_test
   DETECT_PROJECT_VERSION_NAME: main
   DETECT_TOOLS: DETECTOR
   DETECT_TIMEOUT: 3000
